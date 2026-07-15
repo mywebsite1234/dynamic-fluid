@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dynamic-fluid"
+version = "0.1.0"
+description = "A small 2D SPH-style fluid & particle simulation built on pygame."
+readme = "README.md"
+license = { text = "MIT License with Commons Clause" }
+requires-python = ">=3.9"
+authors = [
+    { name = "Danylo Stoian", email = "dynamic-fluid@cool-beans.org" },
+]
+keywords = ["fluid", "simulation", "sph", "physics", "pygame"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment :: Simulation",
+    "Topic :: Multimedia :: Graphics",
+]
+dependencies = [
+    "pygame>=2.1",
+]
+
+[project.urls]
+Homepage = "https://dynamic-fluid.cool-beans.org"
+Repository = "https://github.com/mywebsite1234/dynamic-fluid"
+
+[project.scripts]
+dynamic-fluid = "dynamic_fluid.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["dynamic_fluid*"]
+
+[tool.setuptools.package-data]
+dynamic_fluid = ["LICENSE"]
