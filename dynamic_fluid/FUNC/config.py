@@ -16,7 +16,7 @@ settle_in_damping = 0.80
 screen_width = 1000
 screen_bottom = 800
 
-# DON'T EDIT!! (you can edit this as well)
+# DON'T EDIT!!
 rest_density = 50.0
 radar_range = 20
 floor_bounce = 0.25
